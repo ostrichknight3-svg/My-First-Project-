@@ -1,19 +1,5 @@
+This project is a Pine Script trading indicator for basic market analysis.
 
-# Pine Script Trading Indicator
+It generates BUY and SELL signals based on moving average crossover strategy.
 
-## Overview
-This is a beginner-level trading indicator built using Pine Script. It is designed for basic market analysis and strategy testing.
-
-## Features
-- Simple and lightweight indicator
-- Works on TradingView
-- Helps in understanding market behavior
-
-## Usage
-1. Open TradingView
-2. Go to Pine Editor
-3. Paste the script
-4. Add to chart
-
-## Disclaimer
-This is not financial advice. Use at your own risk.
+The project is created for learning and development practice..
