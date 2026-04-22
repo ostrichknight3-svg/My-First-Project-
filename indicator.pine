@@ -1,0 +1,16 @@
+//@version=5
+indicator("My First Pine Indicator", overlay=true)
+
+// Simple moving average
+length = 20
+smaValue = ta.sma(close, length)
+
+// Plot line on chart
+plot(smaValue, title="SMA 20", color=color.blue)
+
+// Buy/Sell basic logic (example only)
+buySignal = ta.crossover(close, smaValue)
+sellSignal = ta.crossunder(close, smaValue)
+
+plotshape(buySignal, title="Buy", location=location.belowbar, color=color.green, style=shape.labelup, text="BUY")
+plotshape(sellSignal, title="Sell", location=location.abovebar, color=color.red, style=shape.labeldown, text="SELL")
